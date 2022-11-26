@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+
+    <title>Dashboard | WebStation Bali</title>
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Poppins, Bebas Neue, Nunito -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-sm text-black font-Nunito">
+    <!-- CTA WhatsApp -->
+    <div class="fixed bottom-5 right-5 p-2 rounded-full border-2">
+      <a href="#">
+        <img src="/assets/Index/whatsapp.png" alt="Contact" width="40px" />
+      </a>
+    </div>
+    <!-- End CTA WhatsApp -->
+
+    <!-- Main Content -->
+    <section id="home">
+      <div class="container mx-auto px-5 lg:px-10 w-screen h-auto">
+        <!-- Navigation -->
+        <div
+          class="flex justify-between items-center pt-3 md:pt-5 lg:pt-8 md:px-5 lg:px-10"
+        >
+          <!-- Logo -->
+          <div class="flex justify-start items-center space-x-3">
+            <img
+              src="/assets/logo.svg"
+              alt="Logo WebStation Bali"
+              width="50px"
+              height="50px"
+            />
+            <span class="text-sm font-Nunito font-bold">WebStation Bali</span>
+          </div>
+          <!-- End Logo -->
+          <!-- Toggle -->
+          <div class="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+              onclick=""
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <!-- End Toggle -->
+          <!-- Menu Bar -->
+          <div class="hidden md:hidden lg:inline-flex space-x-10">
+            <ul
+              class="flex justify-center items-center space-x-8 text-xs font-Poppins"
+            >
+              <li>
+                <a href="#home" class="underline ease-in-out duration-150"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about-us"
+                  class="hover:underline ease-in-out duration-150"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#our-services"
+                  class="hover:underline ease-in-out duration-150"
+                  >OUR SERVICES</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blogs"
+                  class="hover:underline ease-in-out duration-150"
+                  >BLOGS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:underline ease-in-out duration-150"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- End Menu Bar -->
+          <!-- Button CTA -->
+          <div class="hidden lg:inline">
+            <a
+              href="#"
+              class="flex justify-center items-center space-x-2 text-center px-5 py-3 rounded-full bg-Primary text-Secondary2 hover:bg-Secondary1 hover:text-Primary ease-in-out duration-200"
+            >
+              <span>Let's Talk</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- End Button CTA -->
+        </div>
+        <!-- End Navigation -->
+
+        <!-- Banner -->
+        <div class="container mx-auto md:px-5 lg:px-10 md:h-auto md:flex">
+          <!-- Photo Mobile -->
+          <div
+            class="md:hidden lg:hidden flex justify-center items-center py-5"
+          >
+            <img
+              src="/assets/Index/banner.png"
+              alt="Photo Illustration"
+              width="300px"
+              class="w-full"
+            />
+          </div>
+          <!-- End Photo Mobile -->
+          <div class="md:flex md:justify-center md:items-center md:mt-10 lg:mt">
+            <!-- Text -->
+            <div class="text-start space-y-5">
+              <h3></h3>
+              <h1
+                class="text-5xl font-bold font-Bebas_Neue xl:text-7xl xl:max-w-lg"
+              >
+                Best way to build your Website
+                <!-- <span class="inline-block"
+                ><img src="/assets/Index/rocket.png" alt="" width="54px"
+              /></span> -->
+              </h1>
+              <p class="text-sm font-normal xl:max-w-lg">
+                WebStation Bali is a company engaged in technological field to
+                assist you in building a webpage based on your need.
+              </p>
+              <div class="py-2">
+                <a
+                  href="#"
+                  class="py-3 px-5 rounded-full bg-Primary text-Secondary2 hover:bg-Secondary1 hover:text-Primary ease-in-out duration-200"
+                  >Start a Project</a
+                >
+              </div>
+            </div>
+            <!-- End Text -->
+
+            <!-- Photo -->
+            <div class="hidden md:inline xl:max-w-[514px] mx-auto">
+              <img
+                src="/assets/Index/banner.png"
+                alt="Photo Illustration"
+                width="1080px"
+              />
+            </div>
+          </div>
+          <!-- End Photo -->
+        </div>
+        <!-- End Banner -->
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about-us">
+      <div
+        class="container mx-auto px-5 mt-10 py-12 lg:px-10 w-screen text-center bg-Secondary1"
+      >
+        <!-- Title -->
+        <div class="text-xl font-Poppins font-bold py-5">
+          <h3>ABOUT US</h3>
+        </div>
+        <!-- End Title -->
+
+        <div class="text-sm py-3 max-w-xl lg:max-w-2xl mx-auto">
+          <p>
+            WebStation Bali is a Information Technology company based in Bali,
+            Indonesia. We have handled dozens of projects from many countries.
+            Our team is filled with people who are very experienced and
+            passionate about implementing clean and functional design and web.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us -->
+
+    <!-- Our Services -->
+    <section id="our-services">
+      <div class="container mx-auto px-5 py-12 lg:px-10 w-screen text-center">
+        <!-- Title -->
+        <div class="text-xl font-Poppins font-bold py-5">
+          <h3>OUR SERVICES</h3>
+        </div>
+        <!-- End Title -->
+        <div class="text-center text-sm py-3 pb-5">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            enim fuga modi rerum rem doloribus?
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- UI/UX Design -->
+          <div class="bg-Secondary2 p-5 rounded-md">
+            <h5 class="py-2 text-base font-bold font-Poppins text-Primary">
+              UI/UX Design
+            </h5>
+            <p class="pb-5 text-slate-600">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quaerat adipisci nesciunt eaque repellat aliquid?
+              <span class="block underline"
+                ><a href="#">Lihat Portfolio</a></span
+              >
+            </p>
+            <a
+              href="https://wa.me/+6281246244399"
+              class="py-2 px-3 bg-Secondary rounded-md"
+              >Pesan Sekarang!</a
+            >
+          </div>
+          <!-- End UI/UX Design -->
+          <!-- Web Development -->
+          <div class="bg-Secondary2 p-5 rounded-md">
+            <h5 class="py-2 text-base font-bold font-Poppins text-Primary">
+              Web Development
+            </h5>
+            <p class="pb-5 text-slate-600">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quaerat adipisci nesciunt eaque repellat aliquid?
+              <span class="block underline"
+                ><a href="#">Lihat Portfolio</a></span
+              >
+            </p>
+            <a
+              href="https://wa.me/+6281246244399"
+              class="py-2 px-3 bg-Secondary rounded-md"
+              >Pesan Sekarang!</a
+            >
+          </div>
+          <!-- End Web Development -->
+          <!-- Web Invitatin -->
+          <div class="bg-Secondary2 p-5 rounded-md">
+            <h5 class="py-2 text-base font-bold font-Poppins text-Primary">
+              Web Invitation
+            </h5>
+            <p class="pb-5 text-slate-600">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quaerat adipisci nesciunt eaque repellat aliquid?
+              <span class="block underline"
+                ><a href="#">Lihat Portfolio</a></span
+              >
+            </p>
+            <a
+              href="https://wa.me/+6281246244399"
+              class="py-2 px-3 bg-Secondary rounded-md"
+              >Pesan Sekarang!</a
+            >
+          </div>
+          <!-- End Web Invitation -->
+        </div>
+      </div>
+    </section>
+    <!-- End Our Services -->
+
+    <!-- Blogs -->
+    <section id="blogs">
+      <div></div>
+    </section>
+    <!-- End Blogs -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div
+        class="container mx-auto px-5 mt-10 py-12 lg:px-10 w-screen text-center bg-Secondary1"
+      >
+        <!-- Title -->
+        <div
+          class="text-xl font-Poppins font-bold py-5 md:mb-10 lg:mb-10 xl:mb-10"
+        >
+          <h3>CONTACT US</h3>
+        </div>
+        <!-- End Title -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto">
+          <!-- Text -->
+          <div
+            class="md:flex md:justify-center lg:flex lg:justify-center xl:flex xl:justify-center"
+          >
+            <div class="space-y-2 mt-3">
+              <div class="flex items-center space-x-3">
+                <img
+                  src="/assets/logo.svg"
+                  alt="Logo"
+                  width="24px"
+                  class="w-8 h-8"
+                />
+                <h3 class="font-bold">WebStation Bali</h3>
+              </div>
+              <div class="flex items-center space-x-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 flex items-center"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+                <p>+62 81 246 244 399</p>
+              </div>
+              <div class="flex items-center space-x-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
+                </svg>
+                <p>Denpasar, Bali, Indonesia</p>
+              </div>
+              <div class="flex items-center space-x-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+                <p>webstation.care@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Text -->
+
+          <!-- Form -->
+          <div>
+            <form
+              action=""
+              method=""
+              class="w-full mx-auto mt-10 md:mt-0 lg:mt-0 xl:mt-0"
+            >
+              <h1 class="text-start mt-3 text-base font-Poppins font-medium">
+                Form Message
+              </h1>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="w-full mt-3 py-3 px-3 bg-transparent border-b-2 border-Secondary text-slate-800 font-Nunito placeholder-slate-800 placeholder-opacity-50 rounded-md"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="w-full mt-3 py-3 px-3 bg-transparent border-b-2 border-Secondary text-slate-800 font-Nunito placeholder-slate-800 placeholder-opacity-50 rounded-md"
+              />
+              <input
+                type="text"
+                name="subyek"
+                placeholder="Subyek"
+                class="w-full mt-3 py-3 px-3 bg-transparent border-b-2 border-Secondary text-slate-800 font-Nunito placeholder-slate-800 placeholder-opacity-50 rounded-md"
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="w-full mt-3 py-3 px-3 bg-transparent border-2 border-Secondary text-slate-800 font-Nunito placeholder-slate-800 placeholder-opacity-50 rounded-md"
+                placeholder="Type your message here!"
+              ></textarea>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="py-3 px-7 bg-Primary rounded-md text-slate-100"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- End Form -->
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+    <!-- End Main Content -->
+
+    <!-- Footer -->
+    <section>
+      <div
+        class="container md:grid md:grid-cols-3 mx-auto px-5 py-12 lg:px-10 w-screen text-center bg-Secondary text-slate-100 space-y-7 md:space-y-0"
+      >
+        <!-- Copyright -->
+        <div class="hidden md:flex md:justify-center md:items-center">
+          <p>&copy <span>All Reserved By WebStation Bali.</span></p>
+        </div>
+        <!-- End Copyright -->
+
+        <!-- Logo -->
+        <div class="flex items-center space-x-3 justify-center">
+          <img
+            src="/assets/logo.svg"
+            alt="Logo"
+            width="24px"
+            class="w-10 h-10"
+          />
+          <h3 class="font-bold text-lg">WebStation Bali</h3>
+        </div>
+        <!-- End Logo -->
+
+        <!-- Social Media -->
+        <div class="flex justify-center items-center space-x-4">
+          <a href="https://www.instagram.com/webstationbali/"
+            ><img
+              src="/assets/Index/instagram.png"
+              alt="Instagram"
+              width="24px"
+          /></a>
+          <a href="https://wa.me/+6281246244399"
+            ><img src="/assets/Index/whatsapp.png" alt="WhatsApp" width="24px"
+          /></a>
+          <a href="mailto:webstation.care@gmail.com"
+            ><img src="/assets/Index/gmail.png" alt="Email" width="24px"
+          /></a>
+        </div>
+        <!-- End Social Media -->
+
+        <!-- Copyright -->
+        <div class="flex justify-center items-center md:hidden">
+          <p>&copy <span>All Reserved By WebStation Bali.</span></p>
+        </div>
+        <!-- End Copyright -->
+      </div>
+    </section>
+    <!-- End Footer -->
+  </body>
+</html>
